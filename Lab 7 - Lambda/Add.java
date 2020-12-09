@@ -5,16 +5,12 @@ public class Add {
         int sum = x0;
         System.out.print(x0 + "+");
 
-        for(int i = 0; i < x.length; i++){
+        for(int i = 0; i < x.length - 1; i++){
             sum += x[i];
-
-            if(i != x.length - 1){
-                System.out.print(x[i] + "+");
-            } else {
-                System.out.print(x[i] + "=" + sum + "\n");
-            }
+            System.out.print(x[i] + "+");
         }
-
+       
+        System.out.print(x[x.length - 1] + "=" + sum, + "\n");
         return sum;
     }
 }
